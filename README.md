@@ -1,5 +1,4 @@
-# react-redux-jwt-authentication-example
+# Boutiqaat Admin
 
-React + Redux - JWT Authentication Tutorial & Example
+Boutiqaat Admin Official (Frontend - React JS)
 
-For documentation and further details go to http://jasonwatmore.com/post/2017/12/07/react-redux-jwt-authentication-tutorial-example
