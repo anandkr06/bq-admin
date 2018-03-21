@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { userActions } from '../actions';
+import './LoginPage.sass'
 
 class LoginPage extends React.Component {
     constructor(props) {
@@ -42,7 +43,7 @@ class LoginPage extends React.Component {
         const { username, password, submitted } = this.state;
         return (
             <div className="col-md-6 col-md-offset-3">
-                <div className="alert alert-info">
+                <div className="test">
                     Username: test<br />
                     Password: test
                 </div>

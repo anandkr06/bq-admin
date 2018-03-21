@@ -19,6 +19,22 @@ module.exports = {
                 query: {
                     presets: ['react', 'es2015', 'stage-3']
                 }
+            },
+			{
+                test: /\.sass$/,
+                loaders: ["style-loader", "css-loader", "sass-loader"]
+            },
+			{
+                test: /\.(jpe?g|png|gif)$/,
+                loaders: ["file-loader"]
+            },
+            {
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: "url-loader?limit=10000&mimetype=application/font-woff"
+            },
+            {
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: "file-loader"
             }
         ]
     },

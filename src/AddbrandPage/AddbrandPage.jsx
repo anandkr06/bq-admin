@@ -10,7 +10,7 @@ class AddbrandPage extends React.Component {
         super(props);
 
         // reset login status
-        this.props.dispatch(userActions.logout());
+        // this.props.dispatch(userActions.logout());
 
         this.state = {
             brandname: '',

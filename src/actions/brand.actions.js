@@ -1,6 +1,6 @@
 import { brandConstants } from '../constants';
 import { brandService } from '../services';
-import { alertActions } from './';
+import { alertActions } from './alert.actions';
 import { history } from '../helpers';
 
 export const brandActions = {
@@ -16,7 +16,7 @@ function addbrand(brandname, description) {
 
         brandService.addbrand(brandname, description)
             .then(
-                brand => { 
+                brand => {
                     dispatch(success(brand));
                     history.push('/');
                 },
@@ -36,8 +36,8 @@ function deletebrand() {
     brandService.deletebrand();
     return { type: brandConstants.BRAND_DELETE };
 }
-function editbrand(){
-    
+function editbrand() {
+
 }
 
 function getAll() {

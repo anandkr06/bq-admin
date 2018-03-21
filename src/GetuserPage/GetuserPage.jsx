@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { userActions } from '../actions';
 
-class HomePage extends React.Component {
+class GetuserPage extends React.Component {
     componentDidMount() {
         this.props.dispatch(userActions.getAll());
     }
@@ -18,7 +18,7 @@ class HomePage extends React.Component {
         return (
             <div className="col-md-6 col-md-offset-3">
                 <h1>Hi {user.firstName}!</h1>
-                <p>You're logged in with BQ-Admin Dashbaord.</p>
+                <p>Manage Users</p>
                 {users.loading && <em>Loading users...</em>}
                 {users.error && <span className="text-danger">ERROR: {users.error}</span>}
                 {users.items &&
@@ -32,9 +32,7 @@ class HomePage extends React.Component {
                 }
                 <p>
                     <Link to="/login">Logout</Link>
-                    <Link to="/getuser">Get_All_Users</Link>
-                    <Link to="/addbrand">Add_Brand</Link>
-                    <Link to="/brand">Brand</Link>
+                    <Link to="/">Home</Link>
                 </p>
             </div>
         );
@@ -50,5 +48,5 @@ function mapStateToProps(state) {
     };
 }
 
-const connectedHomePage = connect(mapStateToProps)(HomePage);
-export { connectedHomePage as HomePage };
+const connectedGetuserPage = connect(mapStateToProps)(GetuserPage);
+export { connectedGetuserPage as GetuserPage };
