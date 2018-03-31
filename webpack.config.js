@@ -1,49 +1,48 @@
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-
-module.exports = {
-    entry: './src/index.jsx',
+var config = {
+    entry: './main.js',
+     
     output: {
-        path: path.resolve('dist'),
-        filename: 'bundle.js'
+       path:'./',
+       filename: 'index.js',
     },
-    resolve: {
-        extensions: ['.js', '.jsx']
-    },
-    module: {
-        loaders: [
-            {
-                test: /\.jsx?$/,
-                exclude: /(node_modules|bower_components)/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['react', 'es2015', 'stage-3']
-                }
-            },
-			{
-                test: /\.sass$/,
-                loaders: ["style-loader", "css-loader", "sass-loader"]
-            },
-			{
-                test: /\.(jpe?g|png|gif)$/,
-                loaders: ["file-loader"]
-            },
-            {
-                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "url-loader?limit=10000&mimetype=application/font-woff"
-            },
-            {
-                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "file-loader"
-            }
-        ]
-    },
-    plugins: [new HtmlWebpackPlugin({
-        template: './src/index.html',
-        filename: 'index.html',
-        inject: 'body'
-    })],
+     
     devServer: {
-        historyApiFallback: true
+       host:'0.0.0.0',     // deployment
+       disableHostCheck : true,  
+       inline: true,
+       port: 8081,
+       historyApiFallback: true
+    },
+    debug: true,
+    devtool: "#eval-source-map",
+     
+    module: {
+       loaders: [
+          {
+             test: /\.(js|jsx|mjs)$/,
+             exclude: /node_modules/,
+             loader: 'babel-loader',
+                 
+             query: {
+                presets: ['es2015', 'react', 'stage-2']
+             }
+          },
+          { test: /\.css$/, loader: "style-loader!css-loader" },
+          { 
+            test: /\.(jpe?g|png|gif)$/, 
+            loaders: ["file"] 
+        },
+        { 
+            test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+            loader: "url-loader?limit=10000&mimetype=application/font-woff" 
+        },
+        { 
+            test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+            loader: "file-loader" 
+        },
+       ]
     }
-}
+ }
+ 
+ module.exports = config;
+ 

@@ -1,0 +1,3 @@
+export const ACTION_NAME = {
+    CREATE_USER_NAVIGATION_MENU
+}

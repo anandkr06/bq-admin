@@ -1,0 +1,5 @@
+#user-profile{color: #96989a; text-align: center;}
+.logo{display: block; width: 100%; text-align: center;}
+.user{display: inline-block; width: 88px; height:88px; background: url('../../../../images/user-bg.png') no-repeat 50% 0; text-indent: -9999px;}
+.name{display: block; text-transform: capitalize; font-size: 20px;}
+.mailid{display: block;}

@@ -1,0 +1,8 @@
+.head-row{background: #f1f1f1; border:1px solid #e1e1e1; border-width: 1px 0;}
+.btn{font-weight: 600;}
+.btn-btq{background: #bea348;
+    border-radius: 20px;
+    padding: 6px 30px;
+    color: #fff}
+.back-btn{ background:url('../../../images/back-arrow.png') no-repeat 0 0; color: #000; padding-left: 45px;}
+.btn-reset{background: transparent; color: #000;}

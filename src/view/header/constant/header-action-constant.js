@@ -1,0 +1,2 @@
+export const SET_HEADER_LABEL = "HEADER_LABEL";
+export const GET_HEADER_LABEL = "GET_HEADER_LABEL";

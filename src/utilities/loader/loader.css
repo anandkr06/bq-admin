@@ -1,0 +1,55 @@
+#loader-bg{position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9; background: rgba(0,0,0,0.6);}
+
+.loader {
+ position: absolute; top: 50%; left: 50%; margin-top: -50px; margin-left: -50px;
+ z-index: 10;
+}
+
+svg {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.made-with-love {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: arial;
+    color: #fff;
+}
+
+.made-with-love i {
+    font-style: normal;
+    color: #F50057;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
+.made-with-love a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.made-with-love a:hover {
+    text-decoration: underline;
+}
+
+.overlay {
+    position: absolute;
+    /* Sit on top of the page content */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+}

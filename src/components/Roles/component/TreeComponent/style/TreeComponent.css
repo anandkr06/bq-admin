@@ -1,0 +1,29 @@
+.hide{
+    display: none;
+}
+.child-option{padding-left: 1.5rem;}
+.child-option-checkbox, .parent-option{
+    pointer-events: none;
+}
+
+.show{
+    display: inline-block;
+}
+
+.expander-right{
+    padding-right: 5px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid grey;
+}
+
+.expander-bottom{
+    padding-right: 5px;
+    width: 0;
+    height: 0;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid grey;
+}
