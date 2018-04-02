@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { reduxForm, Field} from 'redux-form';
 import axios from 'axios';
-import { viewAllUsersAction } from '../action/UserAction';
+import { viewAllUsersAction } from '../../../redux/actions/index';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {DropdownList} from 'react-widgets';

@@ -4,7 +4,7 @@ import {DropdownList} from 'react-widgets';
 import { reduxForm, Field} from 'redux-form';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchAllRoleListAction } from '../action/UserAction';
+import { fetchAllRoleListAction } from '../../../redux/actions/index';
 
 class UserRole extends Component{
 

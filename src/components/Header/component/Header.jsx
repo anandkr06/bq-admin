@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect, dispatch } from 'react-redux';
 import { combineReducers } from 'redux'
 import { reset, submit } from 'redux-form';
-import { editUserFormAction } from '../../User/action/UserAction';
-import { editRoleForm } from "../../Roles/action/update-role-action";
+import { editUserFormAction } from '../../../redux/actions/user-action';
+import { editRoleForm } from "../../../redux/actions/rolesActions/update-role-action";
 import '../styles/header.css'
 
 

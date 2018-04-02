@@ -11,10 +11,10 @@ import { bindActionCreators } from 'redux';
 import TreeComponent from './TreeComponent/component/TreeComponent.jsx';
 
 //include actions
-import { nestedResourcesData, nestedScopesData } from '../action/role-action';
+import { nestedResourcesData, nestedScopesData,hideScopeTreeComponent,hideResourcesTreeComponent } from '../../../redux/actions/index';
 
 //import actions for update calls.
-import { hideScopeTreeComponent,hideResourcesTreeComponent } from '../action/update-role-action';
+//import { hideScopeTreeComponent,hideResourcesTreeComponent } from '../../../redux/actions/rolesActions/update-role-action';
 
 
 class RoleResources extends Component {

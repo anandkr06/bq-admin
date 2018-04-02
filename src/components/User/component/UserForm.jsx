@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { reduxForm, Field, reset} from 'redux-form';
 import axios from 'axios';
 import {Multiselect, DropdownList} from 'react-widgets';
-import { createUserAction, fetchCelebrityListAction, fetchAllLocaleListAction, editUserFormAction, updateUserAction, fetchAllRoleListAction } from '../action/UserAction';
+import { createUserAction, fetchCelebrityListAction, fetchAllLocaleListAction, editUserFormAction, updateUserAction, fetchAllRoleListAction } from '../../../redux/actions/index';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 

@@ -25,14 +25,19 @@ export const minLength6 = minLength(6);
 const isAlphabet = (value) => value && /[^a-zA-Z\s]/i.test(value) ? 'Only alphanumeric characters' : undefined;
 
 //import actions for create calls
-import { createRoleInfoAction, initAction } from "../action/role-action";
+import { createRoleInfoAction, 
+    initAction,
+    editRoleForm, 
+    updateRoleAction,
+    hideScopeTreeComponent,
+    hideResourcesTreeComponent } from "../../../redux/actions/index";
 //import actions for update calls.
-import { editRoleForm, updateRoleAction,hideScopeTreeComponent,hideResourcesTreeComponent } from '../action/update-role-action';
+//import { editRoleForm, updateRoleAction,hideScopeTreeComponent,hideResourcesTreeComponent } from '../../../redux/actions/rolesActions/update-role-action';
 //forms role segment 
 import RoleResources from './RoleResourcesForm.jsx';
 
 // //include actions
-// import { nestedResourcesData, nestedScopesData } from '../action/role-action';
+// import { nestedResourcesData, nestedScopesData } from '../../../redux/actions/rolesActions/create-role-action';
 
 // //include nestedMultiSelect
 // import TreeComponent from './TreeComponent/component/TreeComponent.jsx';

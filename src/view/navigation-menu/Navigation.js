@@ -20,7 +20,7 @@ class Navigation extends Component {
 
     render(){
         return (
-            <div className="col-2 sidebar">
+            <div className="col-lg-2 sidebar col-md-3">
                 <UserProfile />
                 <Menu url={this.props.url}/>
                 <button  className="signout" onClick={this.signOut}>Sign Out</button>

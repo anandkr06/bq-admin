@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import '../styles/LoginScreen.css';
 import { withRouter } from 'react-router';
-import LoginApiService from '../api';
+
 
 //redux and react-redux.
 import { bindActionCreators } from 'redux';
@@ -12,7 +12,7 @@ import { connect } from 'react-redux';
 import Loader from '../../../utilities/loader/Loader';
 
 //importing actions
-import { login } from '../action/login-action';
+import { login } from '../../../redux/actions/index';
 
 //importing actions for hiding alerts
 import { alertHide , alertShow } from '../../../utilities/alert/action/alert-action';

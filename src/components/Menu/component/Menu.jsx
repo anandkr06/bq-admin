@@ -9,7 +9,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 //include actions 
-import { setActiveView } from '../action/menu-list-action';
+import { setActiveView } from '../../../redux/actions/index';
 
 //import components for actions on menu.
 import UserForm from '../../User/component/UserForm.jsx';   // include create user form 

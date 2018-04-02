@@ -30,7 +30,7 @@ class View extends React.Component {
             <div className="container-fluid">
                 <div className="row">                   
                         <Navigation url = {this.props.match.url} history={this.props.history}/>    
-                    <div className="col-10 offset-2 main px-0"> 
+                    <div className="col-lg-10 offset-lg-2 col-md-9 offset-md-3 main px-0"> 
                         <Header/>
                         <Screen url = {this.props.match.url}/> 
                     </div>

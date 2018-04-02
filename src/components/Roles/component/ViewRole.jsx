@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 //include actions 
-import { allRolesRecords } from '../action/view-role-action';
+import { allRolesRecords } from '../../../redux/actions/index';
 
 //import form utilities
 import Alert from '../../../utilities/alert/Alert';

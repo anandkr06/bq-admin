@@ -10,7 +10,7 @@ import View from './src/view/view';
 
 //react and redux related library
 import { Provider } from 'react-redux';
-import store, { history } from './src/store/index';
+import store, { history } from './src/redux/store/index';
 
 //redux router related libaray 
 // import { ConnectedRouter } from 'react-router-redux';
@@ -24,6 +24,7 @@ class Main extends Component {
     render() {
         return (
             <div>
+               
                 <Route exact path='/' component={Login} />
                 <Route path='/home' component={View} />
             </div>

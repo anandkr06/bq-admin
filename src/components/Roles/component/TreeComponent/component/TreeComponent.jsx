@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import '../style/TreeComponent.css';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { selectedCheckedValueAction } from '../action/tree-actions';
+import { selectedCheckedValueAction,saveSelectedScopes,saveSelectedResources } from '../../../../../redux/actions/index';
 
-import { saveSelectedScopes,saveSelectedResources } from '../../../action/role-action';
+//import { saveSelectedScopes,saveSelectedResources } from '../../../../../redux/actions/rolesActions/create-role-action';
 
 
 class TreeComponent extends Component{

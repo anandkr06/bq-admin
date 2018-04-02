@@ -4,7 +4,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import './NavigationMenu.css';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Events } from '../../actions/actions';
+import { Events } from '../../../redux/actions';
 
 class NavigationMenu extends React.Component {
     constructor(props) {
